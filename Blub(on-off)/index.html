@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom class 01</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            display: flex;
+        }
+        button{
+            padding: 20px 50px;
+            font-size: 18px;
+        }
+        .col-left{
+            padding: 15% 10%;
+        }
+        .col-left h1{
+            font-size: 40px;
+        }
+        .col-left h1 span{
+            font-size: 60px;
+            display: block;
+            color: blueviolet;
+        }
+        .col-right{
+            width: 30%;
+            margin: 0 auto;
+            height: 100vh;
+            background-color: #ccc;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="col-left">
+            <h1>Blub on and off using <span>JavaScript</span></h1>
+        </div>
+        <div class="col-right">
+            <img src="offBlub.png" id="blub" alt="" srcset="">
+            <button id="onBlub" onclick="onHandler()">On Blub</button>
+            <button id="offBlub" onclick="offHandler()" style="display: none;">Off Blub</button>
+        </div>
+    </div>
+    <script>
+        const on = document.getElementById('onBlub')
+        const off = document.getElementById('offBlub')
+        const blub = document.getElementById('blub')
+
+        // On Blub Function
+        function onHandler() {                  
+            blub.src = 'onBlub.png'
+            off.style.display = 'block'
+            on.style.display = 'none'
+        }
+
+        // On Blub Function
+        function offHandler() {
+            blub.src = 'offBlub.png'
+            off.style.display = 'none'
+            on.style.display = 'block'
+        }
+    </script>
+</body>
+</html>
