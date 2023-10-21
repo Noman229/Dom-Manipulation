@@ -5,8 +5,19 @@ const menu = document.querySelector('.menu')
 const icons = document.querySelector('.socialsIcon')
 window.onresize = resizeScreen
 
-
+window.onload = function(){
+    console.log(window.innerWidth)
+    if (window.innerWidth <= 850){
+        closeMenuBtn.style.display = 'none'
+        bars.style.display = 'block'
+        nav.classList.add('hidden')
+    }else{
+        bars.style.display = 'none'
+        nav.classList.remove('hidden')
+    }
+}
 function resizeScreen() {
+    
     if (window.innerWidth <= 850){
         closeMenuBtn.style.display = 'none'
         bars.style.display = 'block'
