@@ -17,27 +17,32 @@
                 <div class="logo">
                     <h1>Noman Khan</h1>
                 </div>
-                <div class="menu">
-                    <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Services</a></li>
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="#">Contact</a></li>
-                    </ul>
+                <div id="nav" class="nav-link">
+                    <i id="closeMenu" style="display: none;" class="fas fa-times-circle" onclick="hideMenu()"></i>
+                    <div class="menu">
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Services</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="socialsIcon">
+                        <ul>
+                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                            <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                            <li><a href="#"><i class="far fa-envelope"></i></a></li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="socialsIcon">
-                    <ul>
-                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                        <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                        <li><a href="#"><i class="far fa-envelope"></i></a></li>
-                    </ul>
-                </div>
-                <a id="menuBtn" href="javascript:avoid(0)" style="display: none;"><i class="fas fa-bars"></i></a>
+                <a id="menuBtn" href="#" style="display: none;" onclick="showMenu()"><i class="fas fa-bars"></i></a>
             </div>
         </div>
     </header>
+
+
     
 
     <script src="app.js"></script>

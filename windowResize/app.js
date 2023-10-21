@@ -1,17 +1,30 @@
 const bars = document.querySelector('#menuBtn')
+const nav = document.querySelector('#nav')
+const closeMenuBtn = document.querySelector('#closeMenu')
 const menu = document.querySelector('.menu')
 const icons = document.querySelector('.socialsIcon')
 window.onresize = resizeScreen
 
+
 function resizeScreen() {
-    if (window.innerWidth < 768){
+    if (window.innerWidth <= 850){
+        closeMenuBtn.style.display = 'none'
         bars.style.display = 'block'
-        menu.style.display = 'none'
-        icons.style.display = 'none'
+        nav.classList.add('hidden')
     }else{
         bars.style.display = 'none'
-        menu.style.display = 'block'
-        icons.style.display = 'block'
+        nav.classList.remove('hidden')
     }
-    
 }   
+
+function showMenu() {
+    nav.classList.remove('hidden')
+    nav.classList.add('mobile-menu-show')
+    closeMenuBtn.style.display = 'block'
+}
+
+function hideMenu() {
+    nav.classList.add('hidden')
+    nav.classList.remove('mobile-menu-show')
+    closeMenuBtn.style.display = 'none'
+}
