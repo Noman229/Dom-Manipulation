@@ -1,0 +1,100 @@
+*,body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+button{
+    background-color: transparent;
+    padding: 5px 20px;
+    margin: 4px;
+    color: orange;
+    border: 2px solid orange;
+    cursor: pointer;
+}
+button:hover{
+    background-color: orange;
+    color: #fff;
+    border: 2px solid orange;
+}
+
+#menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#menuBtnsBox {
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+}
+
+#menu-box {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 70%;
+    margin-top: 20px;
+}
+
+.menu-item{
+    width: 48%;
+    margin: 5px;
+    display: flex;
+    border: 2px solid orange;
+    border-radius: 5px;
+}
+.menu-item img{
+    width: 100%;
+}
+.menu-img, .menu-content{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.menu-content{
+    padding: 0 10px;
+}
+.menu-content h2{
+    color: orange;
+}
+.menu-content h2, .menu-content h3, .menu-content h4, .menu-content p{
+    margin-bottom: 5px;
+}
+
+
+
+@media (max-width: 992px){
+    #menuBtnsBox {
+        width: 50%;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .menu-item{
+        display: block;
+    }
+    .menu-img, .menu-content {
+        width: 100%;
+        display: block;
+    }
+}
+
+@media (max-width: 850px){
+    #menu-box{
+        width: 100%;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 680px){
+    #menu-box{
+        width: 100%;
+        padding: 10px;
+    }
+    .menu-item {
+        width: 100%;
+    }
+}
