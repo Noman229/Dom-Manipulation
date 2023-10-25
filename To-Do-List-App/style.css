@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+}
+h1{
+    margin: 20px 0;
+}
+#to-do-list{
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+}
+.list-input {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+input[type=text]{
+    width: 80%;
+    height: 40px;
+    border: 1px solid #000;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 18px;
+}
+input[type=submit]{
+    background-color: #000;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    border: 2px solid #000;
+    border-radius: 5px;
+    padding: 7px 40px;
+    margin: 0;
+    cursor: pointer;
+}
+input[type=submit]:hover{
+    background-color: #fff;
+    color: #000;
+}
+
+.list-box{
+    background-color: #f5f5f5;
+    width: 100%;
+    padding: 30px 10px;
+    margin-top: 30px;
+    border-radius: 5px;
+}
+.list-box ul{
+    list-style: none;
+    padding: 0;
+}
+.list-box li{
+    background-color: skyblue;
+    text-align: start;
+    padding: 7px 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.list-box li h2{
+    font-size: 18px;
+}
+.list-box li span{
+    margin-left: 10px;
+}
+.list-box li i{
+    background-color: #fff;
+    color: #000;
+    padding: 7px;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 50px;
+}
+.list-box li i:hover{
+    background-color: #000;
+    color: #fff;
+}
+
+
+@media (max-width: 991px){
+    #to-do-list{
+        width: 80%;
+    }
+}
+
+@media (max-width: 768px){
+    #to-do-list{
+        width: 90%;
+    }
+    .list-input {
+        display: block;
+    }
+    .list-input input[type=text]{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .list-box li h2{
+        font-size: 16px;
+    }
+    .list-box li i{
+        font-size: 16px;
+    }
+}
