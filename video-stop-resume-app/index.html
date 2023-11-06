@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Video App</title>
+</head>
+<body>
+    <div class="video-box">
+        <video id="video" onmouseover="hoverHandler()" autoplay loop muted preload="auto">
+            <source src="video.mp4" type="video/mp4">
+        </video>
+    </div>
+    <div class="handlers">
+        <button id="stop" class="btn" onclick="stopHandler()">Stop</button>
+        <button id="resume" class="btn" onclick="resumeHandler()">Resume</button>
+    </div>
+      
+
+    <script src="app.js"></script>
+</body>
+</html>
