@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Game App</title>
+</head>
+<body>
+    
+    <div class="game-container">
+        <div class="game-row">
+            <div id="playerOneCol" class="player-column">
+                <h2>Player : 01</h2>
+                <p id="firstPlayerName"></p>
+                <h1 id="firstPlayerTotalScore">0</h1>
+                <div class="current-box box-1">
+                    <img src="" id="playerOneEmoji" width="50" alt="">
+                    <p id="playOneText">Current</p>
+                    <p id="firstPlayerCurrentScore">0</p>
+                </div>
+            </div>
+            <div id="playerTwoCol" class="player-column">
+                <h2>Player : 02</h2>
+                <p id="secondPlayerName"></p>
+                <h1 id="secondPlayerTotalScore">0</h1>
+                <div class="current-box">
+                    <img src="" id="playerTwoEmoji" width="50" alt="">
+                    <p id="playTwoText">Current</p>
+                    <p id="secondPlayerCurrentScore">0</p>
+                </div>
+            </div>
+        </div>
+        <div class="handlers">
+            <div><button id="newGameBtn">New Game</button></div>
+            <div><img src="assets/images/6.png" id="diceImg" alt=""></div>
+            <div>
+                <button id="rollDiceBtn">Roll Dice</button>
+                <button id="holdBtn">Hold</button>
+            </div>
+        </div>
+    </div>
+    
+
+
+
+    <script src="assets/js/app.js"></script>
+</body>
+</html>
